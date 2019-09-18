@@ -15,7 +15,7 @@ renderPage();
 function renderPage() {
     const ulList = document.getElementById('product-list');
 
-    fetch("http://demo9468179.mockable.io/products")
+    fetch("https://demo9468179.mockable.io/products")
     .then( (response) => (response.json()) )
     .then( function(productList) {
 
@@ -180,7 +180,7 @@ function renderReviewsSection(productId) {
     ratingInput.appendChild( createRatingTextBox(productId) );
     ratingInput.appendChild( createSubmitButton(productId) );
 
-    fetch(`http://demo9468179.mockable.io/reviews/${productId}`)
+    fetch(`https://demo9468179.mockable.io/reviews/${productId}`)
     .then( (response) => (response.json()))
     .then( function (reviews) {
         
