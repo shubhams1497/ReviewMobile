@@ -1,0 +1,161 @@
+#container{
+    width:70%;
+    border: 2px solid #ccc;
+    margin:auto;
+    display: none;
+    min-width: 1000px;
+    max-width: 1300px;
+}
+
+#loading-display{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    border: 2px solid rgb(231, 231, 231);; 
+    display: block;
+}
+
+.loading-bars{
+    width: 80%;
+    height: 20px;
+    margin: 50px 10px;
+    background-image: linear-gradient(to right, rgb(228, 228, 228) ,rgba(231, 231, 231, 0.32));
+}
+
+#product-list{
+    list-style: none;
+    width:28%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#product-list li{
+    padding: 15px 30px;
+}
+
+
+
+#product-list li.selected{
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #fff;
+    box-shadow: -8px 0px 6px 1px #aaaaaa;
+}
+
+.product-image{
+    width: 50px;
+    height:auto;
+    margin-left: 90px;
+}
+
+.average-rating{
+    border-radius: 4px;
+    padding: 2px 4px; 
+    color: white;
+    margin-right: 5px; 
+    font-size: 12px;
+}
+
+.Average{
+    background-color: #D32F2F;
+}
+
+.Good{
+    background-color: #FFCA28;
+}
+
+.Excellent{
+    background-color: #00C853;
+}
+
+
+.average-rating svg{
+    width: 12px;
+    height: 12px;
+    vertical-align: text-top;
+    margin: 0 2px;
+    fill: white;
+}
+
+.product-price img{
+    height: 12px;
+}
+
+.review-section{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 75px; 
+    border-left: 2px solid gray;
+    box-shadow: -4px 0px 4px 1px #aaaaaa;
+}
+
+#review-list{
+    margin: 60px 0;
+}
+
+#review-list ul{
+    list-style: none;
+    padding-left: 0; 
+}
+
+#review-list ul li{
+    border-top: 2px solid #eee;
+}
+
+p.gray-text{
+    color: gray;
+}
+
+#rating-input-section{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500; 
+}
+
+
+
+#rating-input-section svg{
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin: 0 2px;
+    fill: rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+#rating-input-section div,
+#rating-input-section textarea{
+    margin: 10px 0; 
+}
+
+#rating-input-section button{
+    font-size: 14px;
+    padding: 5px 10px; 
+    cursor: pointer;
+    color: #fff;
+    background-color: #f17304;
+}
+
+#rating-input-section button:hover{
+    transform-origin: center;
+    transform: scale(1.1);
+    transition: all .2s ease;
+}
+
+
+
+#rating-input-section textarea{
+    display: block;
+}
+
+.fillYellow{
+    fill: #f1db19;
+
+}
+
+.fillGray{
+    fill: rgb(212, 212, 212);
+}
